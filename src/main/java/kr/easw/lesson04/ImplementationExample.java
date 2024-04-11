@@ -24,7 +24,7 @@ public class ImplementationExample {
          * "TestValue"
          */
         public String getString() {
-            throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+            return "TestValue"; // "TestValue"를 반환
         }
 
         /**
@@ -44,7 +44,9 @@ public class ImplementationExample {
          * @param data 계산이 진행되어야 할 값
          */
         public String eval(String first, int data) {
-            throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+            // 두번째 값을 2로 나눈 다음, 7을 곱하고, 3을 제곱한 후, 5로 나눔
+            int result = ((data / 2) * 7 * 7 * 7) / 5;
+            return first + " - " + result; // 결과 문자열 반환
         }
     }
 }
